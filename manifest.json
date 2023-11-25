@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "DSA-Revi",
-  "description": "Base Level Extension",
+  "description": "Quick Access to Data Structures and Algorithms",
   "version": "1.0",
   "action": {
     "default_popup": "hello.html",
