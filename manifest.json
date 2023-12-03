@@ -3,6 +3,10 @@
   "name": "DSA-Revi",
   "description": "Quick Access to Data Structures and Algorithms",
   "version": "1.0",
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
   "action": {
     "default_popup": "popup/popup.html",
     "default_icon": "images/icon-128.png"
