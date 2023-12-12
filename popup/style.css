@@ -30,3 +30,43 @@ body {
   margin-left: 160px; /* Same as the width of the sidenav */
   padding: 0px 10px;
 }
+
+.biggerText {
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  text-align: justify;
+  direction: ltr;
+  padding-right: 20px;
+}
+
+.tableStyle {
+  border-collapse: collapse;
+  margin: 25px 0;
+  min-width: 400px;
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tableStyle thead tr {
+  background-color: #3b3a39;
+  color: #ffffff;
+  text-align: left;
+}
+
+.tableStyle th,
+.tableStyle td {
+  padding: 2px 15px;
+}
+
+.tableStyle tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.tableStyle tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.tableStyle tbody tr:last-of-type {
+  border-bottom: 2px solid #3b3a39;
+}
