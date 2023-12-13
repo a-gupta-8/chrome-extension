@@ -89,24 +89,341 @@
         </table>
         <pre>
         <code class="language-python">
-          print("Hello, World!")
+          # In Python
+
+          myArray = []
+          myArray.append(5)
+          myArray[0]
+          myArray.pop()
         </code>
         </pre>
       </div>
 
       <div id="LinkedListPage" style="display: none">
-        <h2>This is a linked list</h2>
-        <p>I love linked listss</p>
+        <h1>Linked Lists</h1>
+        <p class="biggerText">
+          Linked Lists are another way of storing lists of data. The difference
+          between Linked Lists and Arrays are that linked lists do not have
+          indexing, so you cannot access elements by their index, because they
+          are not stored contiguosly in memory.
+        </p>
+        <p class="biggertext">
+          Instead, linked lists use pointers to point to their next value. Each
+          element in the linked list is stored as a node which consists of the
+          value itself and a pointer to the next node.
+        </p>
+        <img
+          src="../images/LinkedList.png"
+          alt="LinkedList IMG"
+          width="400px"
+        />
+        <p class="biggerText">
+          The above shows a singly-linked list where the each node points to the
+          next node, but there can also be doubly linked lists where each node
+          has an additional "previous" pointer that points to the previous node.
+        </p>
+        <table class="tableStyle">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Time Complexity (amortised)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Insertion</td>
+              <td>O(1)</td>
+            </tr>
+            <tr>
+              <td>Remove element</td>
+              <td>O(1)</td>
+            </tr>
+            <tr>
+              <td>Access element</td>
+              <td>O(n)</td>
+            </tr>
+          </tbody>
+        </table>
+        <pre>
+        <code class="language-python">
+          # In Python
+
+          class Node(element):
+            val = value
+            next = None
+          
+          head = Node(5)
+          head.next = Node(1)
+        </code>
+        </pre>
       </div>
 
       <div id="HashSetPage" style="display: none">
-        <h2>This is a HASH</h2>
-        <p>AJDAIJEDIAE</p>
+        <h1>Hash Sets</h1>
+        <p class="biggerText">
+          Hash Sets is a typical set but a little bit better. A set cannot have
+          duplicate values which is also the case in hash sets, but hash sets
+          use a hashing function which allows for constant time lookup of
+          values.
+        </p>
+        <p class="biggertext">
+          A hashing function pretty much takes in the element as an input and
+          does some sort of arithmic calculation on it to produce a hash
+          value/id. Then some modulus of that hash value is used as the index of
+          the value to store at.
+        </p>
+        <img src="../images/HashSet.png" alt="LinkedList IMG" width="400px" />
+        <p class="biggerText">
+          A good hashing function is one that produces different hash values for
+          different inputs. But in some cases two inputs can have the same hash
+          value, in which case there are two methods used when inserting those
+          values.
+        </p>
+        <p class="biggerText">
+          1. Insert the value in the next available address
+        </p>
+        <p class="biggerText">
+          2. Make a linked list at the point and append the value as a node
+        </p>
+        <img
+          src="../images/HashValCollision.png"
+          alt="HashValueSame"
+          width="600px"
+        />
+        <table class="tableStyle">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Time Complexity (amortised)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Insertion</td>
+              <td>O(1)</td>
+            </tr>
+            <tr>
+              <td>Remove element</td>
+              <td>O(1)</td>
+            </tr>
+            <tr>
+              <td>Access element</td>
+              <td>O(1)</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
       <div id="HashMapPage" style="display: none">
-        <h2>This is HASH MAPS</h2>
-        <p>TEST TEST TEST</p>
+        <h1>Hash Maps</h1>
+        <p class="biggerText">
+          Hashmaps are very similar to hash sets but instead of just the value
+          being stored, they store a (key, value) pair where you can access the
+          values by user defined keys.
+        </p>
+        <p class="biggertext">
+          The benefit here is that, we are not restricted to using
+          indexes/numbers for accessing values, rather we can define how we want
+          to acess those values.
+        </p>
+        <p class="biggerText">
+          Hash maps are also called objects in some languages and can be used to
+          store multiple data types into one data type.
+        </p>
+        <img src="../images/HashMap.png" alt="hashmap" width="400px" />
+        <table class="tableStyle">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Time Complexity (amortised)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Insertion</td>
+              <td>O(1)</td>
+            </tr>
+            <tr>
+              <td>Remove element</td>
+              <td>O(1)</td>
+            </tr>
+            <tr>
+              <td>Access element</td>
+              <td>O(1)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="BinaryTreePage" style="display: none">
+        <h1>Binary Trees</h1>
+        <p class="biggerText">
+          Hashmaps are very similar to hash sets but instead of just the value
+          being stored, they store a (key, value) pair where you can access the
+          values by user defined keys.
+        </p>
+        <p class="biggertext">
+          The benefit here is that, we are not restricted to using
+          indexes/numbers for accessing values, rather we can define how we want
+          to acess those values.
+        </p>
+        <p class="biggerText">
+          Hash maps are also called objects in some languages and can be used to
+          store multiple data types into one data type.
+        </p>
+        <img src="../images/HashMap.png" alt="hashmap" width="400px" />
+        <table class="tableStyle">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Time Complexity (amortised)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Insertion</td>
+              <td>O(1)</td>
+            </tr>
+            <tr>
+              <td>Remove element</td>
+              <td>O(1)</td>
+            </tr>
+            <tr>
+              <td>Access element</td>
+              <td>O(1)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="StacksPage" style="display: none">
+        <h1>Stacks</h1>
+        <p class="biggerText">
+          Hashmaps are very similar to hash sets but instead of just the value
+          being stored, they store a (key, value) pair where you can access the
+          values by user defined keys.
+        </p>
+        <p class="biggertext">
+          The benefit here is that, we are not restricted to using
+          indexes/numbers for accessing values, rather we can define how we want
+          to acess those values.
+        </p>
+        <p class="biggerText">
+          Hash maps are also called objects in some languages and can be used to
+          store multiple data types into one data type.
+        </p>
+        <img src="../images/HashMap.png" alt="hashmap" width="400px" />
+        <table class="tableStyle">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Time Complexity (amortised)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Insertion</td>
+              <td>O(1)</td>
+            </tr>
+            <tr>
+              <td>Remove element</td>
+              <td>O(1)</td>
+            </tr>
+            <tr>
+              <td>Access element</td>
+              <td>O(1)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="QueuesPage" style="display: none">
+        <h1>Queues</h1>
+        <p class="biggerText">
+          Hashmaps are very similar to hash sets but instead of just the value
+          being stored, they store a (key, value) pair where you can access the
+          values by user defined keys.
+        </p>
+        <p class="biggertext">
+          The benefit here is that, we are not restricted to using
+          indexes/numbers for accessing values, rather we can define how we want
+          to acess those values.
+        </p>
+        <p class="biggerText">
+          Hash maps are also called objects in some languages and can be used to
+          store multiple data types into one data type.
+        </p>
+        <img src="../images/HashMap.png" alt="hashmap" width="400px" />
+        <table class="tableStyle">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Time Complexity (amortised)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Insertion</td>
+              <td>O(1)</td>
+            </tr>
+            <tr>
+              <td>Remove element</td>
+              <td>O(1)</td>
+            </tr>
+            <tr>
+              <td>Access element</td>
+              <td>O(1)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="HeapsPage" style="display: none">
+        <h1>Heaps</h1>
+        <p class="biggerText">
+          Hashmaps are very similar to hash sets but instead of just the value
+          being stored, they store a (key, value) pair where you can access the
+          values by user defined keys.
+        </p>
+        <p class="biggertext">
+          The benefit here is that, we are not restricted to using
+          indexes/numbers for accessing values, rather we can define how we want
+          to acess those values.
+        </p>
+        <p class="biggerText">
+          Hash maps are also called objects in some languages and can be used to
+          store multiple data types into one data type.
+        </p>
+        <img src="../images/HashMap.png" alt="hashmap" width="400px" />
+        <table class="tableStyle">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Time Complexity (amortised)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Insertion</td>
+              <td>O(1)</td>
+            </tr>
+            <tr>
+              <td>Remove element</td>
+              <td>O(1)</td>
+            </tr>
+            <tr>
+              <td>Access element</td>
+              <td>O(1)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="GraphsPage" style="display: none">
+        <h1>Graphs</h1>
+        <p class="biggerText">
+          Graphs are used as a way to structure relationships between elements.
+          Graphs can be directed or undirected and can be stored as an adjacency
+          matrix or adjacency list. Graphs usually are accessed through
+          traversal algorithms such as BFS and DFS. Similar to other data
+          structures, each element in a graph can be stored as a node.
+        </p>
+        <img src="../images/Graph.png" alt="hashmap" width="400px" />
       </div>
     </div>
     <script src="popup.js"></script>

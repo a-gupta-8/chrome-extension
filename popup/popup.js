@@ -24,6 +24,21 @@ document.getElementById("HashSet").addEventListener("click", function () {
 document.getElementById("HashMap").addEventListener("click", function () {
   switchToPage("HashMapPage");
 });
+document.getElementById("BinaryTree").addEventListener("click", function () {
+  switchToPage("BinaryTreePage");
+});
+document.getElementById("Stack").addEventListener("click", function () {
+  switchToPage("StacksPage");
+});
+document.getElementById("Queue").addEventListener("click", function () {
+  switchToPage("QueuesPage");
+});
+document.getElementById("Heap").addEventListener("click", function () {
+  switchToPage("HeapsPage");
+});
+document.getElementById("Graph").addEventListener("click", function () {
+  switchToPage("GraphsPage");
+});
 
 function switchToPage(pageId) {
   // Hide all pages

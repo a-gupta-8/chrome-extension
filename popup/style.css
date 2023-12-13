@@ -70,3 +70,7 @@ body {
 .tableStyle tbody tr:last-of-type {
   border-bottom: 2px solid #3b3a39;
 }
+
+.language-python {
+  font-size: 15px;
+}
