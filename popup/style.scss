@@ -12,16 +12,16 @@ body {
   background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
-}
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-.sidenav a:hover {
-  color: #f1f1f1;
+  a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  a:hover {
+    color: #f1f1f1;
+  }
 }
 
 .main {
@@ -44,28 +44,30 @@ body {
   border-radius: 3px 3px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-.tableStyle thead tr {
-  background-color: #3b3a39;
-  color: #ffffff;
-  text-align: left;
-}
-.tableStyle th,
-.tableStyle td {
-  padding: 2px 15px;
-}
-.tableStyle tbody tr {
-  border-bottom: 1px solid #dddddd;
-}
-.tableStyle tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-.tableStyle tbody tr:last-of-type {
-  border-bottom: 2px solid #3b3a39;
+  thead {
+    tr {
+      background-color: #3b3a39;
+      color: #ffffff;
+      text-align: left;
+    }
+  }
+  th,
+  td {
+    padding: 2px 15px;
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid #dddddd;
+    }
+    tr:nth-of-type(even) {
+      background-color: #f3f3f3;
+    }
+    tr:last-of-type {
+      border-bottom: 2px solid #3b3a39;
+    }
+  }
 }
 
 .language-python {
   font-size: 15px;
 }
-
-/*# sourceMappingURL=style.css.map */
