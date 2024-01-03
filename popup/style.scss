@@ -16,11 +16,11 @@ body {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #818182;
     display: block;
-  }
-  a:hover {
-    color: #f1f1f1;
+    &:hover {
+      color: #f1f1f1;
+    }
   }
 }
 
@@ -58,12 +58,12 @@ body {
   tbody {
     tr {
       border-bottom: 1px solid #dddddd;
-    }
-    tr:nth-of-type(even) {
-      background-color: #f3f3f3;
-    }
-    tr:last-of-type {
-      border-bottom: 2px solid #3b3a39;
+      &:nth-of-type(even) {
+        background-color: #f3f3f3;
+      }
+      &:last-of-type {
+        border-bottom: 2px solid #3b3a39;
+      }
     }
   }
 }
